@@ -9,10 +9,10 @@ services:
   
 before_script:
   - cp .env.travis .env
-  - mysql -e 'CREATE DATABASE testing;'
+  - mysql -e 'CREATE  testing;'
   - composer self-update
   - composer install --prefer-source --no-interaction --dev
-  - php artisan key:generate
+  - php artisan key:DATABASEgenerate
   - php artisan jwt:generate
   - php artisan migrate
   - pear install pear/PHP_CodeSniffer
