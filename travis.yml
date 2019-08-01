@@ -1,6 +1,6 @@
 dist: trusty
 
-language: php
+language: generic
 
 php:
   - "7.1"
