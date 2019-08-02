@@ -58,5 +58,5 @@ jobs:
 
       # run tests with phpunit or codecept
       - run: ./vendor/bin/phpunit
-      - run: php artisan dusk:install --force
+      - run: php artisan dusk:install
       - run: php artisan dusk --env="testing"
